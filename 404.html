@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 — Lost in the fleet · Shashank Mahajan</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="256x256" href="favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  x-dc{display:block;width:100%}
+  x-dc:not(:defined){display:block;width:100%}
+
+  body { margin: 0; min-height: 100vh; background: #f4efe2; color: #14110f; font-family: "Space Grotesk", sans-serif; -webkit-font-smoothing: antialiased; display: flex; flex-direction: column; overflow-x: hidden; }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: #ffcf1a; color: #14110f; }
+  @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+  @keyframes wob { 0%,100% { transform: rotate(-1.5deg); } 50% { transform: rotate(2deg); } }
+  @keyframes marq { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 5vw; background: #f4efe2; border-bottom: 3px solid #14110f; }
+  .logo { font-family: "Anton", sans-serif; font-size: 26px; letter-spacing: .5px; display: flex; align-items: center; gap: 8px; }
+  .dot { display: inline-block; width: 16px; height: 16px; background: #ff2e1f; border: 2px solid #14110f; border-radius: 50%; animation: bob 3s ease-in-out infinite; }
+  .cta { font-weight: 700; font-size: 15px; background: #14110f; color: #f4efe2; border: 3px solid #14110f; padding: 8px 16px; box-shadow: 4px 4px 0 #ff2e1f; }
+  main { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 8vh 5vw; position: relative; }
+  .shape { position: absolute; z-index: 0; }
+  .c1 { top: 8%; right: 8vw; width: 190px; height: 190px; background: #1a3bff; border-radius: 50%; animation: bob 6s ease-in-out infinite; }
+  .c2 { bottom: 6%; left: 6vw; width: 130px; height: 130px; background: #ffcf1a; border: 3px solid #14110f; transform: rotate(12deg); animation: wob 7s ease-in-out infinite; }
+  .inner { position: relative; z-index: 1; max-width: 1100px; }
+  h1 { font-family: "Anton", sans-serif; font-weight: 400; line-height: .82; margin: 0; font-size: clamp(120px,26vw,420px); letter-spacing: -2px; }
+  h1 .mid { color: #ff2e1f; }
+  .tag { display: inline-block; background: #1a3bff; color: #f4efe2; font-family: "Anton", sans-serif; font-size: clamp(20px,3.4vw,46px); text-transform: uppercase; padding: 6px 16px; transform: rotate(-1.5deg); margin: 8px 0 26px; }
+  p.lede { font-size: clamp(16px,1.8vw,22px); max-width: 560px; line-height: 1.45; font-weight: 500; margin: 0 0 32px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 14px; }
+  .btn { font-family: "Anton", sans-serif; font-size: 20px; text-transform: uppercase; border: 3px solid #14110f; padding: 14px 26px; cursor: pointer; }
+  .btn.primary { background: #ffcf1a; color: #14110f; box-shadow: 6px 6px 0 #14110f; }
+  .btn.primary:hover { transform: translate(3px,3px); box-shadow: 3px 3px 0 #14110f; }
+  .btn.ghost { background: #f4efe2; color: #14110f; box-shadow: 6px 6px 0 #1a3bff; }
+  .btn.ghost:hover { transform: translate(3px,3px); box-shadow: 3px 3px 0 #1a3bff; }
+  .marquee { background: #14110f; color: #ffcf1a; border-top: 3px solid #14110f; overflow: hidden; padding: 12px 0; white-space: nowrap; }
+  .marquee span { display: inline-flex; gap: 40px; font-family: "Anton", sans-serif; font-size: 26px; text-transform: uppercase; animation: marq 20s linear infinite; }
+  
+  @media (min-width:1800px){ nav,header,section,footer{ padding-left:calc((100vw - 1600px)/2)!important; padding-right:calc((100vw - 1600px)/2)!important; } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="78864763-e9b8-400b-9922-8e6505c0e741"></script>
+</head>
+<body>
+  <nav>
+    <a class="logo" href="index.html">SHASHANK<span class="dot"></span></a>
+    <a class="cta" href="index.html">Back home →</a>
+  </nav>
+
+  <main>
+    <div class="shape c1"></div>
+    <div class="shape c2"></div>
+    <div class="inner">
+      <h1>4<span class="mid">0</span>4</h1>
+      <div class="tag">This page took a wrong turn.</div>
+      <p class="lede">Even the best-tracked fleet loses a vehicle now and then. The page you're after isn't on the map, but everything else is.</p>
+      <div class="btns">
+        <a class="btn primary" href="index.html">↖ Back to home</a>
+        <a class="btn ghost" href="index.html#work">See the work</a>
+      </div>
+    </div>
+  </main>
+
+  <div class="marquee"><span>Lost ✳ Page not found ✳ 404 ✳ Reroute ✳ Lost ✳ Page not found ✳ 404 ✳ Reroute ✳ Lost ✳ Page not found ✳ 404 ✳ Reroute ✳ Lost ✳ Page not found ✳ 404 ✳ Reroute ✳</span></div>
+</body>
+</html>

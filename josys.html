@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- __favicon -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="256x256" href="favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<!-- /__favicon -->
+<!-- __seo -->
+<meta name="__seo" content="1">
+<title>Josys Health Score, Case Study | Shashank Mahajan</title>
+<meta name="description" content="Redesigning Josys's SaaS management dashboard from a generic data readout into a security-first, action-oriented command center for IT admins.">
+<meta name="author" content="Shashank Mahajan">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://shashankmahajan.in/josys.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Shashank Mahajan">
+<meta property="og:title" content="Josys Health Score, Case Study | Shashank Mahajan">
+<meta property="og:description" content="Redesigning Josys's SaaS management dashboard from a generic data readout into a security-first, action-oriented command center for IT admins.">
+<meta property="og:url" content="https://shashankmahajan.in/josys.html">
+<meta property="og:image" content="https://shashankmahajan.in/opt/og-josys.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@shashankux">
+<meta name="twitter:creator" content="@shashankux">
+<meta name="twitter:title" content="Josys Health Score, Case Study | Shashank Mahajan">
+<meta name="twitter:description" content="Redesigning Josys's SaaS management dashboard from a generic data readout into a security-first, action-oriented command center for IT admins.">
+<meta name="twitter:image" content="https://shashankmahajan.in/opt/og-josys.jpg">
+<!-- /__seo -->
+<script src="./support.js"></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="78864763-e9b8-400b-9922-8e6505c0e741"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+<script>(function(){var d=document;var ACCENTS=["#1a3bff","#14110f","#ffcf1a","#ff2e1f","#14110f"];function heroAccent(){var hd=d.querySelector("header");if(hd){var c=getComputedStyle(hd).backgroundColor;if(c&&c!=="rgba(0, 0, 0, 0)"&&c!=="transparent")return c;}return "#1a3bff";}function title(){var t=(d.title||"").split(/[|,·]/)[0].trim();return t||"Loading";}function mount(){if(!d.body){return requestAnimationFrame(mount);}if(d.getElementById("om-skel"))return;var ac=heroAccent();var pal=[ac,"#14110f","#ffcf1a",ac,"#14110f"];var s=d.createElement("div");s.id="om-skel";s.setAttribute("aria-hidden","true");var bars="";for(var i=0;i<5;i++){bars+='<i style="background:'+pal[i]+';animation-delay:'+(i*0.12)+'s"></i>';}s.innerHTML='<div class="mk">\u273b</div><div class="bars">'+bars+'</div><div class="lbl"><b>'+title()+'</b></div><div class="track"><i style="background:'+ac+'"></i></div>';d.body.appendChild(s);}mount();var done=false;function go(){if(done)return;done=true;var s=d.getElementById("om-skel");if(!s)return;s.classList.add("om-skel-hide");setTimeout(function(){if(s.parentNode)s.parentNode.removeChild(s);},520);}function ready(){if(d.fonts&&d.fonts.ready){d.fonts.ready.then(function(){setTimeout(go,300);});}else{setTimeout(go,700);}}if(d.readyState==="complete")ready();else window.addEventListener("load",ready);setTimeout(go,4500);})();</script>
+<script src="./image-slot.js" defer></script>
+<script src="./sound.js" defer></script>
+<style>
+  * { box-sizing: border-box; }
+  x-dc{display:block;width:100%}
+  x-dc:not(:defined){display:block;width:100%}
+
+
+  @keyframes omspin{to{transform:rotate(360deg)}}
+  @keyframes ombar{0%,100%{transform:scaleY(.18)}50%{transform:scaleY(1)}}
+  @keyframes omfill{0%{width:0}80%{width:92%}100%{width:100%}}
+  @keyframes omup{from{transform:translateY(115%)}to{transform:none}}
+  #om-skel{position:fixed;inset:0;z-index:99997;background:#f4efe2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:30px}
+  #om-skel.om-skel-hide{opacity:0;transition:opacity .5s ease;pointer-events:none}
+  #om-skel .mk{position:absolute;top:20px;right:5vw;font-size:34px;line-height:1;animation:omspin 3.2s linear infinite}
+  #om-skel .bars{display:flex;align-items:flex-end;gap:12px;height:120px}
+  #om-skel .bars i{display:block;width:24px;height:100%;border:3px solid #14110f;transform-origin:bottom;animation:ombar 1s ease-in-out infinite}
+  @keyframes omfade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  #om-skel .lbl{max-width:82vw;text-align:center;padding:0 5vw}
+  #om-skel .lbl b{display:inline-block;font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(24px,4vw,44px);letter-spacing:1px;color:#14110f;line-height:1.05;animation:omfade .5s ease both}
+  #om-skel .track{width:min(320px,64vw);height:14px;border:3px solid #14110f;background:#fff;overflow:hidden;box-shadow:5px 5px 0 #14110f}
+  #om-skel .track i{display:block;height:100%;animation:omfill 1.5s cubic-bezier(.4,0,.1,1) forwards}
+
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #f4efe2; color: #14110f; font-family: "Space Grotesk", sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: #ffcf1a; color: #14110f; }
+  @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+  [data-rv] { opacity: 0; transform: translateY(30px); transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); will-change: opacity, transform; }
+  [data-rv].rv-show { opacity: 1; transform: none; }
+  @media (pointer: fine) { body, a, button { cursor: none; } }
+  #om-cursor { position: fixed; top: 0; left: 0; width: 26px; height: 26px; border: 3px solid #14110f; border-radius: 50%; background: #f4efe2; pointer-events: none; z-index: 99998; mix-blend-mode: difference; transition: width .18s ease, height .18s ease, background .18s ease; will-change: transform; }
+  #om-cursor.om-hot { width: 58px; height: 58px; background: #ffcf1a; }
+  #om-cursor.om-press { background: #1a3bff; }
+  #om-dot { position: fixed; top: 0; left: 0; width: 7px; height: 7px; border-radius: 50%; background: #ff2e1f; pointer-events: none; z-index: 99999; will-change: transform; }
+  @media (pointer: coarse) { #om-cursor, #om-dot { display: none !important; } body, a, button { cursor: auto !important; } }
+  @media (max-width: 820px) {
+    [data-m="meta"] { grid-template-columns: 1fr 1fr !important; }
+    [data-m="two"] { grid-template-columns: 1fr !important; }
+  }
+  
+  @media (min-width:1800px){ nav,header,section,footer{ padding-left:calc((100vw - 1600px)/2)!important; padding-right:calc((100vw - 1600px)/2)!important; } }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; scroll-behavior: auto !important; } [data-rv] { opacity: 1 !important; transform: none !important; } #om-cursor, #om-dot { display: none !important; } body, a, button { cursor: auto !important; } }
+</style>
+</helmet>
+
+<div style="min-height:100vh;overflow-x:hidden;">
+  <nav style="position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 5vw;background:#f4efe2;border-bottom:3px solid #14110f;">
+    <a href="index.html" style="font-family:'Anton',sans-serif;font-size:26px;letter-spacing:.5px;display:flex;align-items:center;gap:8px;">
+      <img src="opt/logo-face.webp" alt="" style="width:34px;height:34px;border-radius:50%;border:2px solid #14110f;object-fit:cover;margin-right:9px;vertical-align:middle;">SHASHANK
+    </a>
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+      <a href="index.html#work" style="font-family:'Space Grotesk';font-weight:700;font-size:15px;padding:8px 12px;" style-hover="background:#ffcf1a;">← All work</a>
+      <a href="mailto:hello@shashank.design" style="font-family:'Space Grotesk';font-weight:700;font-size:15px;background:#14110f;color:#f4efe2;border:3px solid #14110f;padding:8px 16px;box-shadow:4px 4px 0 #ff2e1f;" style-hover="box-shadow:2px 2px 0 #ff2e1f;transform:translate(2px,2px);">Say hi →</a>
+    </div>
+  </nav>
+
+  <article>
+    <!-- HERO -->
+    <header style="padding:6vh 5vw 5vh;background:#1a3bff;color:#f4efe2;border-bottom:3px solid #14110f;">
+      <a href="index.html#work" style="display:inline-block;font-family:ui-monospace,monospace;font-size:13px;background:#14110f;color:#f4efe2;padding:8px 14px;margin-bottom:28px;" style-hover="background:#ff2e1f;">← Back to work</a>
+      <p style="font-family:'Anton',sans-serif;font-size:16px;letter-spacing:3px;text-transform:uppercase;margin:0 0 8px;color:#ffcf1a;">Case 01 · 2024 · Josys</p>
+      <h1 style="font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(44px,9vw,140px);line-height:.86;text-transform:uppercase;margin:0 0 20px;">From noise<br>to action</h1>
+      <p style="font-size:clamp(18px,2vw,27px);max-width:800px;line-height:1.4;font-weight:500;margin:0;">Redesigning Josys's SaaS management dashboard from a generic data readout into a security-first, action-oriented command center that helps IT admins reclaim control of their stack.</p>
+    </header>
+
+    <!-- META -->
+    <section data-m="meta" style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-bottom:3px solid #14110f;">
+      <div style="padding:24px 5vw;border-right:3px solid #14110f;"><p style="font-family:ui-monospace,monospace;font-size:12px;text-transform:uppercase;letter-spacing:1px;margin:0 0 6px;opacity:.6;">Role</p><p style="font-family:'Anton',sans-serif;font-size:19px;text-transform:uppercase;margin:0;">Lead Designer</p></div>
+      <div style="padding:24px 5vw;border-right:3px solid #14110f;"><p style="font-family:ui-monospace,monospace;font-size:12px;text-transform:uppercase;letter-spacing:1px;margin:0 0 6px;opacity:.6;">Team</p><p style="font-family:'Anton',sans-serif;font-size:19px;text-transform:uppercase;margin:0;">Design Director · PM · Data</p></div>
+      <div style="padding:24px 5vw;border-right:3px solid #14110f;"><p style="font-family:ui-monospace,monospace;font-size:12px;text-transform:uppercase;letter-spacing:1px;margin:0 0 6px;opacity:.6;">Scope</p><p style="font-family:'Anton',sans-serif;font-size:19px;text-transform:uppercase;margin:0;">Discovery → Handoff</p></div>
+      <div style="padding:24px 5vw;"><p style="font-family:ui-monospace,monospace;font-size:12px;text-transform:uppercase;letter-spacing:1px;margin:0 0 6px;opacity:.6;">Platform</p><p style="font-family:'Anton',sans-serif;font-size:19px;text-transform:uppercase;margin:0;">Web · IT admin</p></div>
+    </section>
+
+    <!-- CONTEXT -->
+    <section style="padding:8vh 5vw;">
+      <p style="font-family:'Anton',sans-serif;font-size:15px;letter-spacing:3px;text-transform:uppercase;color:#ff2e1f;margin:0 0 8px;">01, Context</p>
+      <h2 data-rv style="font-family:'Anton',sans-serif;font-size:clamp(30px,4.5vw,60px);text-transform:uppercase;margin:0 0 28px;line-height:.95;max-width:16ch;">What is Josys, and who uses it?</h2>
+      <div data-m="two" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;">
+        <p data-rv style="font-size:clamp(20px,1.7vw,26px);line-height:1.55;margin:0;font-weight:500;">Josys is a SaaS management platform that gives IT teams full visibility and control over the software and devices their employees use.</p>
+        <p data-rv style="font-size:20px;line-height:1.6;margin:0;">The core users are <strong>IT admins and security leads at mid-market companies</strong>, people working across dozens of tools, managing hundreds of apps and thousands of user accounts, under constant pressure to reduce cost, stay compliant, and close security gaps. I led design on the Scorecard and Dashboard experience end-to-end alongside the Design Director, from discovery and strategy through execution and engineering handoff.</p>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section style="padding:8vh 5vw;background:#14110f;color:#f4efe2;border-top:3px solid #14110f;border-bottom:3px solid #14110f;">
+      <p style="font-family:'Anton',sans-serif;font-size:15px;letter-spacing:3px;text-transform:uppercase;color:#ffcf1a;margin:0 0 8px;">02, The problem</p>
+      <h2 data-rv style="font-family:'Anton',sans-serif;font-size:clamp(32px,5.5vw,80px);text-transform:uppercase;margin:0 0 24px;line-height:.9;">A dashboard full of data,<br><span style="color:#ff2e1f;">empty of direction.</span></h2>
+      <div data-m="two" style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;">
+        <div>
+          <p data-rv style="font-size:19px;line-height:1.6;margin:0 0 18px;">The old dashboard opened with four generic stat cards, a spending line chart, and a most-used-apps table. On paper it covered the basics. In practice it told admins <em>what was happening</em>, never <em>what to do about it.</em></p>
+          <p data-rv style="font-size:19px;line-height:1.6;margin:0;">Every session ended with the same question:</p>
+          <p data-rv style="font-family:'Anton',sans-serif;font-size:clamp(24px,3vw,40px);line-height:1.05;text-transform:uppercase;color:#ffcf1a;margin:20px 0 0;">“Okay… so what do I act on first?”</p>
+        </div>
+        <div data-rv style="border:3px solid #f4efe2;box-shadow:10px 10px 0 #ff2e1f;aspect-ratio:16/11;overflow:hidden;background:#e7dfca;">
+          <image-slot loading="lazy" src="slotimg/josys-old-dash.webp" id="josys-old-dash" shape="rect" placeholder="Old dashboard, generic stat cards, spend chart, most-used apps table" alt="Old dashboard, generic stat cards, spend chart, most-used apps table"></image-slot>
+        </div>
+      </div>
+      <div data-rv style="border:3px solid #ff2e1f;background:rgba(255,46,31,.12);padding:24px 26px;margin-top:40px;max-width:900px;">
+        <p style="font-family:'Anton',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#ff2e1f;margin:0 0 8px;">Core tension</p>
+        <p style="font-size:19px;line-height:1.55;margin:0;">The dashboard was built around metrics. But IT admins don't manage metrics, they manage <strong>risk</strong>. The product had to shift from <em>"here is your data"</em> to <em>"here is what needs your attention, and here's how to fix it."</em></p>
+      </div>
+    </section>
+
+    <!-- FINDINGS -->
+    <section style="padding:8vh 5vw;border-bottom:3px solid #14110f;">
+      <h2 data-rv style="font-family:'Anton',sans-serif;font-size:clamp(28px,4vw,52px);text-transform:uppercase;margin:0 0 32px;">What we found</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;max-width:1400px;">
+        <div data-rv style="border:3px solid #14110f;background:#f4efe2;padding:24px;box-shadow:6px 6px 0 #14110f;"><div style="font-family:'Anton',sans-serif;font-size:28px;color:#ff2e1f;">No first move</div><p style="font-size:16px;line-height:1.5;margin:10px 0 0;">Admins checked the dashboard every morning but couldn't determine a clear first action. The spend chart didn't connect to any task they could complete in-product.</p></div>
+        <div data-rv style="border:3px solid #14110f;background:#f4efe2;padding:24px;box-shadow:6px 6px 0 #14110f;"><div style="font-family:'Anton',sans-serif;font-size:28px;color:#1a3bff;">No hero moment</div><p style="font-size:16px;line-height:1.5;margin:10px 0 0;">Sales had nothing to anchor demos. Every feature needed a guided walkthrough, no single number or visual carried the value proposition.</p></div>
+        <div data-rv style="border:3px solid #14110f;background:#f4efe2;padding:24px;box-shadow:6px 6px 0 #14110f;"><div style="font-family:'Anton',sans-serif;font-size:28px;color:#14110f;">Shadow IT hidden</div><p style="font-size:16px;line-height:1.5;margin:10px 0 0;">Unauthorized apps and accounts were admins' top concern, yet nothing on the dashboard surfaced that urgency.</p></div>
+        <div data-rv style="border:3px solid #14110f;background:#f4efe2;padding:24px;box-shadow:6px 6px 0 #14110f;"><div style="font-family:'Anton',sans-serif;font-size:28px;color:#ff2e1f;">Risk scattered</div><p style="font-size:16px;line-height:1.5;margin:10px 0 0;">Security and compliance issues were spread across sections, admins navigated five different pages to get one full risk picture.</p></div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section style="padding:8vh 5vw;background:#ffcf1a;border-bottom:3px solid #14110f;">
+      <p style="font-family:'Anton',sans-serif;font-size:15px;letter-spacing:3px;text-transform:uppercase;color:#ff2e1f;margin:0 0 8px;">02, Research</p>
+      <h2 data-rv style="font-family:'Anton',sans-serif;font-size:clamp(30px,4.5vw,60px);text-transform:uppercase;margin:0 0 12px;">Who we talked to</h2>
+      <p data-rv style="font-size:18px;line-height:1.55;max-width:820px;margin:0 0 36px;font-weight:500;">The US support & CS team lived on the front line and heard the same frustrations weekly. The Japan support team brought a more security-sensitive, compliance-heavy enterprise context. The sales team knew exactly what blocked deals. I paired all of it with session recordings and drop-off analysis.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;max-width:1400px;">
+        <figure data-rv style="margin:0;background:#f4efe2;border:3px solid #14110f;padding:24px;box-shadow:8px 8px 0 #14110f;"><blockquote style="font-size:18px;line-height:1.45;margin:0 0 16px;font-weight:500;">“I look at the dashboard, nod at the numbers, then go to Slack to figure out what's actually on fire today. The two don't talk to each other.”</blockquote><figcaption style="border-top:2px solid #14110f;padding-top:10px;font-size:14px;font-weight:700;">IT Admin · Japan</figcaption></figure>
+        <figure data-rv style="margin:0;background:#f4efe2;border:3px solid #14110f;padding:24px;box-shadow:8px 8px 0 #14110f;"><blockquote style="font-size:18px;line-height:1.45;margin:0 0 16px;font-weight:500;">“I know we're overspending on SaaS, but I can't prove it without spending hours pulling data.”</blockquote><figcaption style="border-top:2px solid #14110f;padding-top:10px;font-size:14px;font-weight:700;">Enterprise IT Admin · US</figcaption></figure>
+        <figure data-rv style="margin:0;background:#f4efe2;border:3px solid #14110f;padding:24px;box-shadow:8px 8px 0 #14110f;"><blockquote style="font-size:18px;line-height:1.45;margin:0 0 16px;font-weight:500;">“The scorecard idea sounds great. I just want a number I can show my CTO every month.”</blockquote><figcaption style="border-top:2px solid #14110f;padding-top:10px;font-size:14px;font-weight:700;">IT Manager · Japan</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- KEY INSIGHT -->
+    <section style="padding:8vh 5vw;background:#ff2e1f;color:#f4efe2;border-bottom:3px solid #14110f;">
+      <p style="font-family:'Anton',sans-serif;font-size:15px;letter-spacing:3px;text-transform:uppercase;color:#ffcf1a;margin:0 0 8px;">Key insight</p>
+      <h2 data-rv style="font-family:'Anton',sans-serif;font-size:clamp(30px,5vw,72px);text-transform:uppercase;margin:0 0 32px;line-height:.9;">Admins open Josys<br>in two modes.</h2>
+      <div data-m="two" style="display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:1100px;">
+        <div data-rv style="border:3px solid #f4efe2;background:#14110f;padding:28px;box-shadow:8px 8px 0 #ffcf1a;"><div style="font-family:'Anton',sans-serif;font-size:clamp(26px,3vw,40px);text-transform:uppercase;color:#ffcf1a;">Triage mode</div><p style="font-size:19px;line-height:1.5;margin:12px 0 0;">“What is broken right now?”</p></div>
+        <div data-rv style="border:3px solid #f4efe2;background:#14110f;padding:28px;box-shadow:8px 8px 0 #1a3bff;"><div style="font-family:'Anton',sans-serif;font-size:clamp(26px,3vw,40px);text-transform:uppercase;color:#1a3bff;">Maintenance mode</div><p style="font-size:19px;line-height:1.5;margin:12px 0 0;">“What should I work on this week?”</p></div>
+      </div>
+      <div data-rv style="border:3px solid #f4efe2;background:rgba(244,239,226,.12);padding:24px 26px;margin-top:32px;max-width:1000px;">
+        <p style="font-family:'Anton',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#ffcf1a;margin:0 0 8px;">Reframe</p>
+        <p style="font-size:19px;line-height:1.55;margin:0;">The old dashboard served neither, it was permanently stuck in an ambiguous "here's some information" state. We designed for <strong>triage first</strong>: if an admin could leave a 60-second session knowing exactly what to fix, the product would feel indispensable. A single score creates urgency, improvement pathways create motivation, and specific breakdowns create clarity.</p>
+      </div>
+    </section>
+
+    <!-- ITERATION 1 -->
+    <section style="padding:8vh 5vw;border-bottom:3px solid #14110f;">
+      <p style="font-family:'Anton',sans-serif;font-size:15px;letter-spacing:3px;text-transform:uppercase;color:#ff2e1f;margin:0 0 8px;">Iteration 01</p>
+      <h2 data-rv style="font-family:'Anton',sans-serif;font-size:clamp(30px,4.5vw,60px);text-transform:uppercase;margin:0 0 20px;">Making it actionable</h2>
+      <p data-rv style="font-size:19px;line-height:1.6;max-width:880px;margin:0 0 32px;">I gave admins a bird's-eye view of Apps, User Profiles and Devices, then surfaced the two biggest cost drivers, <strong>apps with the most shadow users</strong> and <strong>underutilized accounts</strong>, with potential savings called out ($28,000/yr in one org). Most importantly, the wall of numbers became a concrete <strong>to-do list</strong>.</p>
+      <div data-m="two" style="display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:1400px;">
+        <div data-rv style="border:3px solid #14110f;box-shadow:10px 10px 0 #1a3bff;aspect-ratio:16/11;overflow:hidden;background:#e7dfca;"><image-slot loading="lazy" src="slotimg/josys-it1-dash.webp" id="josys-it1-dash" shape="rect" placeholder="Iteration 1, dashboard with Shadow IT & license management" alt="Iteration 1, dashboard with Shadow IT & license management"></image-slot></div>
+        <div data-rv style="border:3px solid #14110f;box-shadow:10px 10px 0 #ff2e1f;aspect-ratio:16/11;overflow:hidden;background:#e7dfca;"><image-slot loading="lazy" src="slotimg/josys-it1-tasks.webp" id="josys-it1-tasks" shape="rect" placeholder="Iteration 1, the Tasks / to-do list view" alt="Iteration 1, the Tasks / to-do list view"></image-slot></div>
+      </div>
+      <div data-rv style="border:3px solid #14110f;background:#f4efe2;padding:24px 26px;margin-top:32px;max-width:1000px;box-shadow:6px 6px 0 #14110f;">
+        <p style="font-family:'Anton',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#ff2e1f;margin:0 0 8px;">What phase 1 taught us</p>
+        <p style="font-size:19px;line-height:1.55;margin:0;">Tasks told admins <em>what</em> to do, but not <em>why</em> it mattered or how urgent it was relative to everything else. Someone with 40 integration failures, 56 shadow users and 12 upcoming renewals still couldn't answer: <strong>"Is my SaaS stack in a good or bad state overall?"</strong> There was no north star.</p>
+      </div>
+    </section>
+
+    <!-- ITERATION 2 -->
+    <section style="padding:8vh 5vw;background:#1a3bff;color:#f4efe2;border-bottom:3px solid #14110f;">
+      <p style="font-family:'Anton',sans-serif;font-size:15px;letter-spacing:3px;text-transform:uppercase;color:#ffcf1a;margin:0 0 8px;">Iteration 02, the bet</p>
+      <h2 data-rv style="font-family:'Anton',sans-serif;font-size:clamp(32px,5.5vw,80px);text-transform:uppercase;margin:0 0 24px;line-height:.9;">Introducing<br>the Scorecard</h2>
+      <p data-rv style="font-size:19px;line-height:1.6;max-width:900px;margin:0 0 20px;">The central bet of the redesign: a <strong>SaaS Management Score</strong>, a single composite number (0–100) that didn't exist anywhere in the original product. To work, it needed two things: enough data points to be meaningful, and the reasoning behind the number so admins could <em>trust it and act on it.</em></p>
+
+      <p data-rv style="font-family:ui-monospace,monospace;font-size:13px;text-transform:uppercase;letter-spacing:2px;margin:36px 0 16px;opacity:.85;">One number, five states</p>
+      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:14px;max-width:1200px;">
+        <div data-rv style="border:3px solid #f4efe2;background:#ff2e1f;color:#f4efe2;padding:18px;text-align:center;"><div style="font-family:'Anton',sans-serif;font-size:clamp(30px,4vw,56px);line-height:.9;">12</div><p style="font-size:12px;font-weight:700;text-transform:uppercase;margin:8px 0 0;">Poor</p></div>
+        <div data-rv style="border:3px solid #f4efe2;background:#14110f;color:#f4efe2;padding:18px;text-align:center;"><div style="font-family:'Anton',sans-serif;font-size:clamp(30px,4vw,56px);line-height:.9;color:#ff2e1f;">31</div><p style="font-size:12px;font-weight:700;text-transform:uppercase;margin:8px 0 0;">Needs work</p></div>
+        <div data-rv style="border:3px solid #f4efe2;background:#ffcf1a;color:#14110f;padding:18px;text-align:center;"><div style="font-family:'Anton',sans-serif;font-size:clamp(30px,4vw,56px);line-height:.9;">56</div><p style="font-size:12px;font-weight:700;text-transform:uppercase;margin:8px 0 0;">On track</p></div>
+        <div data-rv style="border:3px solid #f4efe2;background:#f4efe2;color:#14110f;padding:18px;text-align:center;"><div style="font-family:'Anton',sans-serif;font-size:clamp(30px,4vw,56px);line-height:.9;color:#1a3bff;">72</div><p style="font-size:12px;font-weight:700;text-transform:uppercase;margin:8px 0 0;">Very good</p></div>
+        <div data-rv style="border:3px solid #f4efe2;background:#14110f;color:#ffcf1a;padding:18px;text-align:center;"><div style="font-family:'Anton',sans-serif;font-size:clamp(30px,4vw,56px);line-height:.9;">91</div><p style="font-size:12px;font-weight:700;text-transform:uppercase;margin:8px 0 0;">Elite</p></div>
+      </div>
+
+      <div data-m="two" style="display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:1400px;margin-top:40px;">
+        <div data-rv style="border:3px solid #f4efe2;box-shadow:10px 10px 0 #ffcf1a;aspect-ratio:16/11;overflow:hidden;background:#e7dfca;"><image-slot loading="lazy" src="slotimg/josys-score91.webp" id="josys-score91" shape="rect" placeholder="Scorecard, the composite SaaS Management Score" alt="Scorecard, the composite SaaS Management Score"></image-slot></div>
+        <div data-rv style="border:3px solid #f4efe2;box-shadow:10px 10px 0 #ff2e1f;aspect-ratio:16/11;overflow:hidden;background:#e7dfca;"><image-slot loading="lazy" src="slotimg/josys-health-panel.webp" id="josys-health-panel" shape="rect" placeholder="'How can I improve my score?', contributing factors panel" alt="'How can I improve my score?', contributing factors panel"></image-slot></div>
+      </div>
+
+      <div data-rv style="border:3px solid #f4efe2;background:rgba(244,239,226,.12);padding:24px 26px;margin-top:36px;max-width:1000px;">
+        <p style="font-family:'Anton',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#ffcf1a;margin:0 0 8px;">Why the anchor matters</p>
+        <p style="font-size:19px;line-height:1.55;margin:0;">Admins can now report a single number upward: <em>"Our SaaS health score is 31, here's why, and here's the plan."</em> The score turns a pile of widgets into a <strong>shared goal</strong>, and tracks improvement over time so progress is visible.</p>
+      </div>
+
+      <h3 data-rv style="font-family:'Anton',sans-serif;font-size:clamp(24px,3vw,40px);text-transform:uppercase;margin:52px 0 16px;">Proactive recommendations</h3>
+      <p data-rv style="font-size:19px;line-height:1.6;max-width:900px;margin:0 0 24px;">A scrollable carousel of contextual, prioritized alerts generated by the system, turning the score into next steps.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;max-width:1400px;margin-bottom:32px;">
+        <div data-rv style="border:3px solid #f4efe2;background:#14110f;color:#f4efe2;padding:20px;"><p style="font-size:16px;line-height:1.45;margin:0 0 14px;"><strong>20% increase</strong> in Adobe CC spend vs last month.</p><span style="font-family:'Anton',sans-serif;font-size:13px;text-transform:uppercase;color:#ffcf1a;">Review now →</span></div>
+        <div data-rv style="border:3px solid #f4efe2;background:#14110f;color:#f4efe2;padding:20px;"><p style="font-size:16px;line-height:1.45;margin:0 0 14px;"><strong>8 apps inactive</strong> for 60 days, consider deprovisioning.</p><span style="font-family:'Anton',sans-serif;font-size:13px;text-transform:uppercase;color:#ffcf1a;">Review now →</span></div>
+        <div data-rv style="border:3px solid #f4efe2;background:#14110f;color:#f4efe2;padding:20px;"><p style="font-size:16px;line-height:1.45;margin:0 0 14px;"><strong>3 accounts</strong> with excessive admin access in Salesforce.</p><span style="font-family:'Anton',sans-serif;font-size:13px;text-transform:uppercase;color:#ffcf1a;">Review now →</span></div>
+      </div>
+      <div data-rv style="border:3px solid #f4efe2;box-shadow:10px 10px 0 #ff2e1f;aspect-ratio:16/8;overflow:hidden;background:#e7dfca;"><image-slot loading="lazy" src="slotimg/josys-recos.webp" id="josys-recos" shape="rect" placeholder="Recommendations carousel, contextual alerts" alt="Recommendations carousel, contextual alerts"></image-slot></div>
+
+      <h3 data-rv style="font-family:'Anton',sans-serif;font-size:clamp(24px,3vw,40px);text-transform:uppercase;margin:52px 0 16px;">Four pillars of the org</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;max-width:1400px;margin-bottom:32px;">
+        <div data-rv style="border:3px solid #f4efe2;background:#ffcf1a;color:#14110f;padding:20px;"><div style="font-family:'Anton',sans-serif;font-size:22px;text-transform:uppercase;">Accounts</div><p style="font-size:15px;line-height:1.45;margin:8px 0 0;">that need attention</p></div>
+        <div data-rv style="border:3px solid #f4efe2;background:#ffcf1a;color:#14110f;padding:20px;"><div style="font-family:'Anton',sans-serif;font-size:22px;text-transform:uppercase;">Apps</div><p style="font-size:15px;line-height:1.45;margin:8px 0 0;">that require action</p></div>
+        <div data-rv style="border:3px solid #f4efe2;background:#ffcf1a;color:#14110f;padding:20px;"><div style="font-family:'Anton',sans-serif;font-size:22px;text-transform:uppercase;">Access</div><p style="font-size:15px;line-height:1.45;margin:8px 0 0;">to review</p></div>
+        <div data-rv style="border:3px solid #f4efe2;background:#ffcf1a;color:#14110f;padding:20px;"><div style="font-family:'Anton',sans-serif;font-size:22px;text-transform:uppercase;">Licenses</div><p style="font-size:15px;line-height:1.45;margin:8px 0 0;">to reclaim</p></div>
+      </div>
+      <p data-rv style="font-size:17px;line-height:1.55;max-width:900px;margin:0 0 24px;opacity:.9;">Grouped under two lenses, <strong>Cost Intelligence</strong> (shadow users and underutilized accounts are the most common source of license overspend) and <strong>Security</strong> (reviewing the apps and accounts with the most privileges).</p>
+      <div data-rv style="border:3px solid #f4efe2;box-shadow:10px 10px 0 #ffcf1a;aspect-ratio:16/9;overflow:hidden;background:#e7dfca;"><image-slot loading="lazy" src="slotimg/josys-pillars.webp" id="josys-pillars" shape="rect" placeholder="Full scorecard, 4 pillars, cost intelligence & security breakdowns" alt="Full scorecard, 4 pillars, cost intelligence & security breakdowns"></image-slot></div>
+    </section>
+
+    <!-- PROTOTYPE -->
+    <section style="padding:8vh 5vw;border-bottom:3px solid #14110f;">
+      <p style="font-family:'Anton',sans-serif;font-size:15px;letter-spacing:3px;text-transform:uppercase;color:#ff2e1f;margin:0 0 8px;">Prototype</p>
+      <h2 data-rv style="font-family:'Anton',sans-serif;font-size:clamp(30px,4.5vw,60px);text-transform:uppercase;margin:0 0 12px;">See it in motion</h2>
+      <p data-rv style="font-size:19px;line-height:1.6;max-width:880px;margin:0 0 32px;">A walkthrough of the Scorecard experience, from landing on your score to acting on the top contributing factors.</p>
+      <div data-rv style="border:3px solid #14110f;box-shadow:12px 12px 0 #1a3bff;aspect-ratio:16/9;overflow:hidden;max-width:1200px;background:#14110f;">
+        <iframe src="https://www.youtube-nocookie.com/embed/eX-UiGgZVYQ?rel=0" title="Josys Scorecard prototype walkthrough" style="width:100%;height:100%;border:0;display:block;" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- IMPACT -->
+    <section style="padding:8vh 5vw;background:#ffcf1a;border-bottom:3px solid #14110f;">
+      <p style="font-family:'Anton',sans-serif;font-size:15px;letter-spacing:3px;text-transform:uppercase;color:#ff2e1f;margin:0 0 8px;">Impact</p>
+      <h2 data-rv style="font-family:'Anton',sans-serif;font-size:clamp(30px,4.5vw,60px);text-transform:uppercase;margin:0 0 32px;">What we moved</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:1400px;">
+        <div data-rv style="border:3px solid #14110f;background:#f4efe2;padding:26px;box-shadow:7px 7px 0 #14110f;"><div style="font-family:'Anton',sans-serif;font-size:clamp(44px,5vw,72px);line-height:.85;color:#ff2e1f;">+40%</div><p style="font-size:15px;font-weight:600;margin:10px 0 0;">Health Score engagement in the first 30 days post-launch</p></div>
+        <div data-rv style="border:3px solid #14110f;background:#f4efe2;padding:26px;box-shadow:7px 7px 0 #14110f;"><div style="font-family:'Anton',sans-serif;font-size:clamp(44px,5vw,72px);line-height:.85;color:#1a3bff;">−3 min</div><p style="font-size:15px;font-weight:600;margin:10px 0 0;">From login to first completed action</p></div>
+        <div data-rv style="border:3px solid #14110f;background:#f4efe2;padding:26px;box-shadow:7px 7px 0 #14110f;"><div style="font-family:'Anton',sans-serif;font-size:clamp(44px,5vw,72px);line-height:.85;">#1</div><p style="font-size:15px;font-weight:600;margin:10px 0 0;">Most-demonstrated feature in new sales cycles</p></div>
+      </div>
+      <div data-m="two" style="display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:1400px;margin-top:32px;">
+        <figure data-rv style="margin:0;background:#14110f;color:#f4efe2;border:3px solid #14110f;padding:26px;"><blockquote style="font-size:19px;line-height:1.45;margin:0 0 16px;font-weight:500;">“Finally, one place where I can see what's actually wrong with our setup. Before, I had to look in five different places.”</blockquote><figcaption style="font-size:14px;font-weight:700;color:#ffcf1a;">IT Admin · Enterprise (US)</figcaption></figure>
+        <figure data-rv style="margin:0;background:#14110f;color:#f4efe2;border:3px solid #14110f;padding:26px;"><blockquote style="font-size:19px;line-height:1.45;margin:0 0 16px;font-weight:500;">“The suggestions panel alone saved us from renewing three apps we weren't using. That's real money.”</blockquote><figcaption style="font-size:14px;font-weight:700;color:#ffcf1a;">Mid-market customer · Japan</figcaption></figure>
+      </div>
+      <p data-rv style="font-size:18px;line-height:1.6;max-width:1000px;margin:32px 0 0;font-weight:500;">Qualitatively, onboarding got dramatically faster once the Scorecard became the landing page, new admins understood the product's value without a walkthrough, and the score created a shared language between IT and their managers.</p>
+    </section>
+
+    <!-- LEARNINGS -->
+    <section style="padding:8vh 5vw;border-bottom:3px solid #14110f;">
+      <h2 data-rv style="font-family:'Anton',sans-serif;font-size:clamp(28px,4vw,52px);text-transform:uppercase;margin:0 0 32px;">What I'd do differently 🤔</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;max-width:1400px;">
+        <div data-rv style="border:3px solid #14110f;background:#f4efe2;padding:24px;box-shadow:6px 6px 0 #1a3bff;"><div style="font-family:'Anton',sans-serif;font-size:20px;text-transform:uppercase;margin-bottom:10px;">Test the formula earlier</div><p style="font-size:16px;line-height:1.5;margin:0;">We designed the scoring algorithm with the PM and data team but didn't validate the weighting with real admins until late, some felt security was under-weighted. An earlier co-creation session would have saved a revision cycle.</p></div>
+        <div data-rv style="border:3px solid #14110f;background:#f4efe2;padding:24px;box-shadow:6px 6px 0 #ff2e1f;"><div style="font-family:'Anton',sans-serif;font-size:20px;text-transform:uppercase;margin-bottom:10px;">Set benchmarks first</div><p style="font-size:16px;line-height:1.5;margin:0;">We had strong intuition but limited behavioral data. Standing up proper analytics before Phase 1 would have given a cleaner before/after comparison.</p></div>
+        <div data-rv style="border:3px solid #14110f;background:#f4efe2;padding:24px;box-shadow:6px 6px 0 #ffcf1a;"><div style="font-family:'Anton',sans-serif;font-size:20px;text-transform:uppercase;margin-bottom:10px;">Filter triage by severity</div><p style="font-size:16px;line-height:1.5;margin:0;">Admins at larger orgs wanted to filter to only critical alerts, High / Medium / Low. A severity filter on the triage strip was a clear next step.</p></div>
+        <div data-rv style="border:3px solid #14110f;background:#f4efe2;padding:24px;box-shadow:6px 6px 0 #14110f;"><div style="font-family:'Anton',sans-serif;font-size:20px;text-transform:uppercase;margin-bottom:10px;">Close the feedback loop</div><p style="font-size:16px;line-height:1.5;margin:0;">If an admin dismisses a suggestion, we lose that signal. A lightweight "Already handled / Not relevant / Remind me later" would improve recommendation quality over time.</p></div>
+      </div>
+    </section>
+
+    <!-- NEXT -->
+    <a href="eagle.html" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;background:#14110f;color:#f4efe2;padding:7vh 5vw;" style-hover="background:#1a3bff;">
+      <div>
+        <p style="font-family:ui-monospace,monospace;font-size:13px;text-transform:uppercase;letter-spacing:2px;margin:0 0 8px;opacity:.7;">Next case study</p>
+        <span style="font-family:'Anton',sans-serif;font-size:clamp(34px,6vw,80px);text-transform:uppercase;line-height:.9;">Eagle AI</span>
+      </div>
+      <span style="font-family:'Anton',sans-serif;font-size:clamp(40px,7vw,90px);">→</span>
+    </a>
+  </article>
+
+  <footer style="background:#14110f;color:#f4efe2;border-top:3px solid #f4efe2;padding:24px 5vw;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+    <a href="index.html" style="font-family:'Anton',sans-serif;font-size:18px;text-transform:uppercase;">Shashank Mahajan © {{ year }}</a>
+    <span style="font-family:ui-monospace,monospace;font-size:12px;opacity:.7;">Designed loudly. Built with care.</span>
+    <a href="index.html" style="font-family:ui-monospace,monospace;font-size:12px;border:1px solid #f4efe2;padding:8px 12px;" style-hover="background:#ffcf1a;color:#14110f;border-color:#ffcf1a;">↑ Home</a>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  componentDidMount() { this._reveal(); this._initCursor(); }
+  componentDidUpdate() { requestAnimationFrame(() => this._reveal()); }
+  componentWillUnmount() { if (this._io) this._io.disconnect(); if (this._cursorCleanup) this._cursorCleanup(); }
+  _reveal() {
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (this._io) this._io.disconnect();
+    this._io = new IntersectionObserver((entries, ob) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("rv-show"); ob.unobserve(e.target); } });
+    }, { threshold: 0.1, rootMargin: "0px 0px -6% 0px" });
+    document.querySelectorAll("[data-rv]:not(.rv-show)").forEach((el) => {
+      const sibs = el.parentElement ? Array.from(el.parentElement.querySelectorAll(":scope > [data-rv]")) : [el];
+      const i = Math.max(0, sibs.indexOf(el));
+      el.style.transitionDelay = Math.min(i, 8) * 70 + "ms";
+      this._io.observe(el);
+    });
+  }
+  _initCursor() {
+    if (this._cursorInit) return;
+    if (!(window.matchMedia && window.matchMedia("(pointer: fine)").matches)) return;
+    this._cursorInit = true;
+    const ring = document.createElement("div"); ring.id = "om-cursor";
+    const dot = document.createElement("div"); dot.id = "om-dot";
+    document.body.appendChild(ring); document.body.appendChild(dot);
+    let mx = innerWidth / 2, my = innerHeight / 2, rx = mx, ry = my;
+    const onMove = (e) => {
+      mx = e.clientX; my = e.clientY;
+      dot.style.transform = "translate(" + mx + "px," + my + "px) translate(-50%,-50%)";
+      const hot = e.target && e.target.closest && e.target.closest("a,button,[role=button],image-slot");
+      ring.classList.toggle("om-hot", !!hot);
+    };
+    const onDown = () => ring.classList.add("om-press");
+    const onUp = () => ring.classList.remove("om-press");
+    addEventListener("mousemove", onMove); addEventListener("mousedown", onDown); addEventListener("mouseup", onUp);
+    const loop = () => {
+      rx += (mx - rx) * 0.18; ry += (my - ry) * 0.18;
+      ring.style.transform = "translate(" + rx + "px," + ry + "px) translate(-50%,-50%)";
+      this._raf = requestAnimationFrame(loop);
+    };
+    loop();
+    this._cursorCleanup = () => {
+      cancelAnimationFrame(this._raf);
+      removeEventListener("mousemove", onMove); removeEventListener("mousedown", onDown); removeEventListener("mouseup", onUp);
+      ring.remove(); dot.remove(); this._cursorInit = false;
+    };
+  }
+  renderVals() { return { year: new Date().getFullYear() }; }
+}
+</script>
+</body>
+</html>
